@@ -8,9 +8,9 @@ var ballRadius=15;
 var x=canvas.width/2;
 var y=canvas.height-30;
 var dx= 8;
-var dy= Math.floor(Math.random()* 5); // if the ball won't go up just change this to 3
+var dy= 3;//Math.floor(Math.random()* 5); // if the ball won't go up just change this to 3
 var paddleHeight=15;
-var paddleWidth=90;
+var paddleWidth=200;
 var paddleX=(canvas.width-paddleWidth)/2;
 var rightPressed= false;
 var leftPressed=false;
@@ -64,8 +64,8 @@ function keyUpHandler(e){
 function drawBall(){
 	ctx.beginPath();
 	ctx.arc(x,y,ballRadius,0,2*Math.PI);
-	ctx.fillstyle="#0033FF";
-	ctx.fillStroke="#0033FF";
+	ctx.fillstyle="#F7DC6F";
+	ctx.fillStroke="#F7DC6F";
 	ctx.Stroke="10"
 	ctx.fill();
 	ctx.closePath();
